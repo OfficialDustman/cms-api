@@ -1,0 +1,74 @@
+
+create a small demo cms with html, css, js, php and sql
+
+frontend(html & cms) :
+
+create a field with the the specifies
+a field would houses record 
+a field would have the different inputs data types.
+
+example: if a product field should be created, 
+the field would have the product image and the data type to house the image
+the field would have the product description and the data type
+the field would have the product price and the data type
+
+ps : the file doesn't hold the value, it just a container table for the records
+
+so each record in the field can now have the value being inputed.
+
+example: imagine an ecommerce store
+
+they can create a field of customers and product 
+and the product field would have records of different product 
+while the customers field have records of different customers.
+
+
+controller (js) :
+
+when a field is created an api call is sent to the to push a new field 
+or put values in the records
+
+ps : push and put are used to describe the api methods
+get and delete would also be used to get records from the fields 
+and delete fields or records
+
+backend (php)
+
+no authentication for now
+
+the php is used to create an api using php global variables.
+
+the php would check for api calls then perform accordinly
+
+the php should connect to the sql database
+
+execution :
+
+when a push api call occurs for a new field.
+
+the information of the field would be used to create a new sql table.
+
+i.e the name of the field would be the table name,
+the information in the field would be the structure of the table 
+with their respective data type
+
+ALSO 
+
+when a put api call occurs for a new record.
+
+the information of the record would be used to insert into the respective table(field).
+meaning the put api call has to carry the name or id of the table(field).
+
+every field and record would have unique id that auto increment
+
+database (sql[myysql])
+
+connected to the php and recieve CRUD instructions.
+
+HTTP Methods:
+
+Specify which HTTP methods (GET, POST, PUT, DELETE, etc.) are allowed for each endpoint. For example:
+GET to retrieve content.
+POST to create new content.
+PUT to update content.
+DELETE to delete content.

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CMS API</title>
+</head>
+<body>
+    <h1>Field Creator</h1>
+    <button id="addFieldBtn">Add a New Field</button>
+
+    <!-- Modal for adding a new field -->
+    <div id="addFieldModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add a New Field</h2>
+            <form id="addFieldForm">
+                <label for="fieldName">Field Name:</label>
+                <input type="text" id="fieldName" required>
+                
+                <input type="hidden" id="OldfieldName" readonly >
+                <!-- Add New Data Type Button -->
+                <button type="button" id="addDataTypeBtn">Add New Data Type</button>
+                  
+                <!-- Data Types List (Unordered List) -->
+                <ul id="dataTypesList"></ul>
+
+                <div id="dataSection">
+                    <!-- This section will be populated dynamically with JavaScript -->
+                </div>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="fieldsList">
+        <h1>List of Fields</h1>
+
+        <ul id="fieldListUl">
+            <!-- List of fields will be displayed here -->
+        </ul>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    margin: 20px;
+    padding: 10px 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#fieldsList {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul#fieldListUl li {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul#fieldListUl li:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+}
+
+ul#fieldListUl li .field-name {
+    font-weight: bold;
+}
+
+ul#fieldListUl li .edit-field:hover {
+    color: blue;
+}
+
+ul#fieldListUl li .edit-field {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+ul#fieldListUl li .delete-field {
+    color: red;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
