@@ -40,13 +40,13 @@ To run this project, you need:
 1. Clone this repository to your web server's directory:
 
 ```shell
-git clone https://github.com/yourusername/field-management-system.git
+git https://github.com/OfficialDustman/cms-api.git
 ```
 
 2. Navigate to the project directory:
 
 ```shell
-cd field-management-system
+cd cms-api
 ```
 3. Install PHP dependencies using Composer:
 ```shell
